@@ -48,3 +48,207 @@ table {
 }
 
 /* Start your code here: */
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation */
+
+nav{
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+}
+
+a, i{
+	color: azure;
+	text-decoration: none;
+	padding: 1em 0;
+	font-size: .75em;
+}
+
+
+
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:nth-child(2){
+	font-family: 'Bungee', cursive;
+	font-size: .75em;
+	text-decoration: none;
+}
+
+a:nth-child(2){
+	margin-left: 2em;
+}
+
+i{
+	color: azure;
+}
+
+
+i:nth-child(1) {
+	display: none;
+}
+
+i:nth-child(2){
+	margin-left: 2em;
+} 
+
+
+
+.container {
+	max-width: 65em;
+	margin: 0 auto;
+	font-size: 2rem;
+
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+
+/* Main */
+
+main{
+	height: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+/* discover section */
+
+
+section{
+	display: block;
+}
+
+section.discoverHero{
+	/* Photo by Jonny Kennaugh on Unsplash  */
+	background-image: url(../images/bike_1920.jpg);
+	background-size: 100% auto;
+	background-position: top;
+	background-repeat: no-repeat;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	color: darkslategray;
+	min-height: 500px;
+	max-height: 1000px;
+}
+
+section.gearUpHero{
+	/* Photo by Flo Karr on Unsplash */
+	background-image: url(../images/gearUp_1920.jpg);
+	background-size: 100% auto;
+	background-position: top;
+	background-repeat: no-repeat;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	color: darkslategray;
+	min-height: 300px;
+	max-height: 800px;
+}
+
+section.apparelHero{
+	/* Photo by Markus Spiske on Unsplash */
+	background-image: url(../images/markus-spiske-544020-unsplash.jpg);
+	background-size: 100% auto;
+	background-position: top;
+	background-repeat: no-repeat;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	color: #FFFFFA;
+	min-height: 300px;
+	max-height: 800px;
+}
+
+section.apparelHero h2, section.discoverHero h2, section.gearUpHero h2{
+	margin-top: 3em;
+}
+
+
+
+section button{
+	margin: .5em;
+	padding: .75em 1em;
+	background-color: #FFFFFA;
+	border: none;
+	text-align: center;
+	display: block;
+	font-size: .75em;
+	text-transform: uppercase;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+a{
+	display: none;
+}
+
+i.mobileHide{
+	visibility: hidden;
+}
+
+
+a:nth-child(2){
+	display: flex;
+	
+}
+
+nav{
+	justify-content: space-around;
+	text-align: Center;
+}
+
+i:nth-child(1){
+	display: flex;
+}
+
+i:nth-child(5){
+	display: flex;
+}
+
+/* end navigation */
+
+
+section.apparelHero{
+	min-height: 230px;
+	max-height: auto;
+	color: #FFFFFA;
+}
+
+section.gearUpHero{
+	min-height: 230px;
+	max-height: auto;
+	color: #FFFFFA;
+
+}
+
+section.discoverHero{
+	min-height: 230px;
+	max-height: auto;
+	color: lightslategray;
+}
+
+
+section h2{
+	justify-self: flex-start;
+	margin-top: .001em;
+}
+
+}
+
